@@ -1,0 +1,10 @@
+$for(posts)$
+    <article class="article-summary">
+      <h1><a href="$url$">$title$</a></h1>
+      <div class="info">
+        <p>$date$</p>
+        $if(keywords)$<p class="keywords">$keywords$</p>$endif$
+        $if(description)$<p class="description">$description$</p>$endif$
+      </div>
+    </article>
+$endfor$

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="$title$" />
+  <meta property="og:site_name" content="Counting to One" />
+  <meta property="og:url"
+    content="https://countingto.one$url$" />
+  $if(description)$<meta property="og:description" content="$description$" />$endif$
+  $if(identifier)$<meta property="og:image"
+    content="https://countingto.one/images/teaser/$identifier$.png" />
+  <meta property="og:type" content="article" />
+  <!--
+  $if(tags)$<meta property="og:article:tag" content="$tags$" />$endif$
+  <meta property="og:article:author" content="https://facebook.com/kiaran.dave" />
+  <meta property="og:article:published_time" content="$date$" />
+  $if(date-modified)$<meta property="og:article:modified_time" content="$date-modified$" />$endif$
+  -->$endif$
+    
+  <title>Counting to One - $title$</title>
+  <link rel="stylesheet" type="text/css" href="/style/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/style/css/highlighting.css" />
+  <script src="https://common.countingto.one/MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="logo"><a href="/">Counting to One</a></div>
+    <div id="navigation">
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/archive.html">Archive</a>
+    </div>
+  </div>
+  <div id="content">
+    $body$
+  </div>
+</body>
+</html>
